@@ -95,6 +95,7 @@
    (health-darkjak-error        float)
    (eco-pill-green-max-default  float)
    (eco-pill-dark-max-default   float)
+   (eco-pill-dark-minimum-needed   float)
    (health-small-inc            float)
    (buzzer-max-default          float)
    (buzzer-single-inc           float)
@@ -152,6 +153,7 @@
                       :shield-time-min (seconds 1.5)
                       :trick-point-max 999999.0
                       :super-skill-inc 3.0
+                      :eco-pill-dark-minimum-needed 10.0
                       )
         )
 

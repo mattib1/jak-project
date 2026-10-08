@@ -1053,7 +1053,9 @@
                       )
                      ((logtest? (-> arg3 param 2) 128)
                       (logclear! (-> self darkjak stage) (darkjak-stage force-on))
-                      (set! v0-0 (+ (- (seconds 20) (-> self fact darkjak-start-time)) (current-time)))
+                      (set! v0-0 (+ (- (darkjak-duration-from-eco (-> self game eco-pill-dark))
+                                       (-> self fact darkjak-start-time))
+                                    (current-time)))
                       (set! (-> self fact darkjak-effect-time) (the-as time-frame v0-0))
                       v0-0
                       )

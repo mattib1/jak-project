@@ -70,6 +70,7 @@
 ;; target-swim
 
 ;; target-darkjak
+(define-extern darkjak-duration-from-eco (function float time-frame))
 (define-extern set-darkjak-texture-morph! (function float none))
 (define-extern process-drawable-random-point! (function process-drawable vector vector))
 (define-extern target-falling-anim-trans (function none :behavior target))
